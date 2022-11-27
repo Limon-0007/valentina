@@ -1,0 +1,669 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  behavior: smooth;
+  -ms-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
+  background: var(--clr-5);
+}
+
+:root {
+  --font-1: "Great Vibes", cursive;
+  --font-2: "Josefin Sans", sans-serif;
+  --font-3: "Open Sans", sans-serif;
+  --font-weight-1: 400;
+  --font-weight-2: 600;
+  --font-weight-3: 700;
+  --clr-1: #d50a51;
+  --clr-2: #444444;
+  --clr-3: #ffffff;
+  --clr-4: #8a5e3b;
+  --clr-5: rgba(255, 255, 255, 1);
+  --clr-6: rgba(0, 0, 0, 0);
+  --clr-7: #666666;
+  --clr-8: rgba(213, 10, 81, 1);
+  --clr-9: rgba(241, 241, 241, 1);
+}
+
+.container {
+  margin-bottom: 100px;
+}
+
+.container:nth-child(1) {
+  margin-bottom: 0px;
+}
+
+/* some common links and properties */
+
+/* navbar satrts from here */
+
+.nav-link {
+  font-family: var(--font-2);
+  font-weight: var(--font-weight-2);
+  color: var(--clr-2);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: var(--clr-1);
+  transform: scale(1.15);
+}
+
+.gift .nav-link {
+  color: var(--clr-1);
+}
+
+.button {
+  background-color: var(--clr-1);
+  color: var(--clr-3);
+  padding: 9px 12px;
+  border: none;
+  border-radius: 30px;
+  font-family: var(--font-2);
+  font-weight: var(--font-weight-1);
+  transition: 0.5s ease-in-out;
+}
+
+.button:hover {
+  background-color: blanchedalmond;
+  color: var(--clr-2);
+  transform: scale(1.05);
+}
+
+/* hero section starts from here */
+
+.hero-texts h4 {
+  font-family: var(--font-2);
+  font-weight: var(--font-weight-2);
+  color: var(--clr-4);
+  font-size: 41px;
+}
+
+.hero-texts h1 {
+  font-family: var(--font-1);
+  font-weight: var(--font-weight-1);
+  color: var(--clr-1);
+  font-size: 74px;
+}
+
+.hero-texts p {
+  font-family: var(--font-2);
+  font-weight: var(--font-weight-1);
+  font-size: 17px;
+  color: var(--clr-2);
+}
+
+.hero-texts button {
+  border: 2px solid var(--clr-1);
+  border-radius: 30px;
+  font-family: var(--font-2);
+  font-weight: var(--font-weight-2);
+  font-size: 18px;
+  color: var(--clr-1);
+  transition: 0.6s ease-in-out;
+}
+
+.hero-texts button:hover {
+  background-color: var(--clr-1);
+  color: var(--clr-3);
+  transform: scale(1.05);
+}
+
+/* hero section ends here */
+
+/* valentine history section starts from here */
+
+.history-texts {
+  overflow: auto;
+  height: 400px;
+  padding: 30px;
+}
+
+.history-texts h3 {
+  font-family: var(--font-2);
+  font-weight: var(--font-weight-2);
+  color: var(--clr-2);
+  font-size: 24px;
+}
+
+.history-texts h3 span {
+  color: var(--clr-1);
+}
+
+.history-texts p {
+  font-family: var(--font-2);
+  font-weight: var(--font-weight-1);
+  font-size: 15px;
+  color: var(--clr-2);
+  text-align: justify;
+}
+
+/* history section ends here */
+
+/* gift and proposal section starts from here */
+
+.valentine-gift {
+  background-color: rgb(240, 240, 183);
+  padding: 30px;
+  border-radius: 6px;
+}
+
+.valentine-gift-texts h3 {
+  font-family: var(--font-2);
+  color: var(--clr-7);
+  font-weight: var(--font-weight-2);
+  font-size: 24px;
+}
+
+.valentine-gift-texts h3 span {
+  color: var(--clr-1);
+}
+
+.valentine-gift-texts p {
+  text-align: justify;
+  font-family: var(--font-2);
+  font-weight: var(--font-weight-1);
+  color: var(--clr-2);
+  font-size: 15px;
+}
+
+.valentine-gift-texts button {
+  font-family: var(--font-3);
+  font-weight: var(--font-weight-2);
+  font-size: 16px;
+}
+
+.valentine-gift-texts .btn-1 {
+  color: var(--clr-3);
+  background-color: var(--clr-8);
+  border-radius: 30px;
+  transition: 0.6s ease-in-out;
+}
+
+.valentine-gift-texts .btn-1:hover {
+  color: var(--clr-8);
+  background-color: var(--clr-3);
+  transform: scale(1.05);
+}
+
+.valentine-gift-texts .btn-2 {
+  color: var(--clr-8);
+  border-radius: 30px;
+  border: 2px solid var(--clr-8);
+  transition: 0.5s ease-in-out;
+}
+
+.valentine-gift-texts .btn-2:hover {
+  color: var(--clr-3);
+  background-color: var(--clr-8);
+  transform: scale(1.05);
+}
+
+/* gifts and proposal section ends from here */
+
+/* couple tickets ends from here */
+
+.couple-ticket-texts {
+  padding: 30px;
+}
+
+.couple-ticket-texts h3 {
+  font-family: var(--font-2);
+  font-weight: var(--font-weight-2);
+  color: var(--clr-2);
+  font-size: 24px;
+}
+
+.couple-ticket-texts h3 span {
+  color: var(--clr-1);
+}
+
+.couple-ticket-texts p {
+  font-family: var(--font-2);
+  font-weight: var(--font-weight-1);
+  font-size: 15px;
+  color: var(--clr-2);
+  text-align: justify;
+}
+
+.couple-ticket-texts button {
+  font-family: var(--font-3);
+  font-weight: var(--font-weight-2);
+  font-size: 16px;
+}
+
+.couple-ticket-texts .btn-1 {
+  color: var(--clr-3);
+  background-color: var(--clr-8);
+  border-radius: 30px;
+  transition: 0.6s ease-in-out;
+  border: 2px solid var(--clr-1);
+}
+
+.couple-ticket-texts .btn-1:hover {
+  color: var(--clr-8);
+  background-color: var(--clr-3);
+  transform: scale(1.05);
+  border: 2px solid var(--clr-1);
+}
+
+.couple-ticket-texts .btn-2 {
+  color: var(--clr-8);
+  border-radius: 30px;
+  border: 2px solid var(--clr-8);
+  transition: 0.5s ease-in-out;
+}
+
+.couple-ticket-texts .btn-2:hover {
+  color: var(--clr-3);
+  background-color: var(--clr-8);
+  transform: scale(1.05);
+}
+
+/* couple tickets ends from here */
+
+/* offers and services section starts from here */
+.services-text {
+  padding: 30px;
+}
+
+.services-text h3 {
+  font-family: var(--font-2);
+  color: var(--clr-7);
+  font-weight: var(--font-weight-2);
+  font-size: 24px;
+}
+
+.services-text h3 span {
+  color: var(--clr-1);
+}
+
+.services-text p {
+  font-family: var(--font-2);
+  font-weight: var(--font-weight-1);
+  font-size: 15px;
+  color: var(--clr-2);
+  text-align: justify;
+}
+
+.dinner span {
+  font-family: var(--font-2);
+  font-weight: var(--font-weight-2);
+  color: var(--clr-1);
+  font-size: 20px;
+}
+
+.music {
+  background-color: var(--clr-9);
+  padding: 0.45rem 1.5rem;
+  border-right: 4px solid var(--clr-1);
+  border-left: 0.15rem solid rgb(190, 178, 178);
+  border-top: 0.15rem solid rgb(190, 178, 178);
+  border-bottom: 0.15rem solid rgb(190, 178, 178);
+  border-radius: 3px;
+  transition: 0.5s ease-in-out;
+}
+
+/* .music:hover {
+  background-color: var(--clr-1);
+  color: var(--clr-3);
+  box-shadow: inherit 10px 10px 10px rgba(0, 0, 0, 0.3),
+    inherit -10px -10px 10px rgba(0, 0, 0, 0.3);
+} */
+
+/* .music span:hover {
+    color: var(--clr-3);
+} */
+
+.music span {
+  font-family: var(--font-2);
+  font-weight: var(--font-weight-2);
+  color: var(--clr-1);
+  font-size: 20px;
+}
+
+.gift span {
+  font-family: var(--font-2);
+  font-weight: var(--font-weight-2);
+  color: var(--clr-1);
+  font-size: 20px;
+}
+
+.drinks span {
+  font-family: var(--font-2);
+  font-weight: var(--font-weight-2);
+  color: var(--clr-1);
+  font-size: 20px;
+}
+
+.music,
+.dinner,
+.gift,
+.drinks p {
+  font-family: var(--font-2);
+  font-weight: var(--font-weight-1);
+  color: var(--clr-2);
+  font-size: 16px;
+  text-align: justify;
+}
+
+/* offers and services section ends from here */
+
+/* captures and shoots section starts from here */
+
+.shoots-texts {
+  padding: 30px 20px;
+  position: relative;
+  top: 10px;
+}
+
+.shoots-texts h3 {
+  font-family: var(--font-2);
+  color: var(--clr-7);
+  font-weight: var(--font-weight-2);
+  font-size: 24px;
+}
+
+.shoots-texts h3 span {
+  color: var(--clr-1);
+}
+
+.shoots-texts p {
+  font-family: var(--font-2);
+  font-weight: var(--font-weight-1);
+  color: var(--clr-2);
+  font-size: 16px;
+  text-align: justify;
+}
+
+.shoots-texts button {
+  font-family: var(--font-3);
+  font-weight: var(--font-weight-2);
+  font-size: 16px;
+}
+
+.shoots-texts .btn-1 {
+  color: var(--clr-3);
+  background-color: var(--clr-8);
+  border: 2px solid var(--clr-1);
+  border-radius: 30px;
+  transition: 0.6s ease-in-out;
+}
+
+.shoots-texts .btn-1:hover {
+  color: var(--clr-8);
+  background-color: var(--clr-3);
+  transform: scale(1.05);
+}
+
+.shoots-texts .btn-2 {
+  color: var(--clr-8);
+  border-radius: 30px;
+  border: 2px solid var(--clr-8);
+  transition: 0.5s ease-in-out;
+}
+
+.shoots-texts .btn-2:hover {
+  color: var(--clr-3);
+  background-color: var(--clr-8);
+  transform: scale(1.05);
+}
+
+/* hover part starts */
+
+.image {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease-out;
+}
+
+.image:hover img {
+  transform: scale(1.2);
+}
+
+.image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.image:hover:before {
+  opacity: 1;
+}
+
+.info {
+  visibility: hidden;
+}
+
+.image:hover .info {
+  visibility: visible;
+}
+
+.icons {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  right: 0;
+  padding: 0.6rem 0.7rem;
+  font-size: 18px;
+  color: var(--clr-3);
+  z-index: 100;
+}
+
+.icons i {
+  margin-bottom: 10px;
+}
+
+.texts {
+  position: absolute;
+  bottom: -15px;
+  font-size: 11px;
+  color: var(--clr-3);
+  text-align: center;
+  font-family: var(--font-2);
+  z-index: 100;
+}
+
+.texts .text {
+  margin-bottom: 0;
+  font-size: 17px;
+}
+
+/* hover part ends */
+
+/* captures and shoots section ends from here */
+
+/* countdown section starts from here */
+
+.countdown {
+  font-family: var(--font-2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.timer-img {
+  position: absolute;
+}
+
+.countdown .day,
+.countdown .hour,
+.countdown .min,
+.countdown .sec {
+  padding: 18px;
+  text-align: center;
+}
+.countdown .day .num,
+.countdown .hour .num,
+.countdown .min .num,
+.countdown .sec .num {
+  display: block;
+  font-size: 40px;
+  color: var(--clr-1);
+  font-weight: var(--font-weight-2);
+}
+.countdown .day .word,
+.countdown .hour .word,
+.countdown .min .word,
+.countdown .sec .word {
+  display: block;
+  font-size: 20px;
+  font-weight: var(--font-weight-2);
+}
+
+/* media queries */
+
+@media only screen and (max-width: 768px) {
+  .countdown .day,
+  .countdown .hour,
+  .countdown .min,
+  .countdown .sec {
+    padding: 18px;
+  }
+  .countdown .day .num,
+  .countdown .hour .num,
+  .countdown .min .num,
+  .countdown .sec .num {
+    display: block;
+    font-size: 20px !important;
+  }
+  .countdown .day .word,
+  .countdown .hour .word,
+  .countdown .min .word,
+  .countdown .sec .word {
+    display: block;
+    font-size: 18px !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .countdown .day,
+  .countdown .hour,
+  .countdown .min,
+  .countdown .sec {
+    padding: 10px;
+  }
+  .countdown .day .num,
+  .countdown .hour .num,
+  .countdown .min .num,
+  .countdown .sec .num {
+    display: block;
+    font-size: 14px !important;
+  }
+  .countdown .day .word,
+  .countdown .hour .word,
+  .countdown .min .word,
+  .countdown .sec .word {
+    display: block;
+    font-size: 12px !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .countdown .day,
+  .countdown .hour,
+  .countdown .min,
+  .countdown .sec {
+    padding: 5px;
+  }
+  .countdown .day .num,
+  .countdown .hour .num,
+  .countdown .min .num,
+  .countdown .sec .num {
+    display: block;
+    font-size: 12px !important;
+  }
+  .countdown .day .word,
+  .countdown .hour .word,
+  .countdown .min .word,
+  .countdown .sec .word {
+    display: block;
+    font-size: 10px !important;
+  }
+}
+
+/* countdown section ends here */
+
+/* slider section starts from here */
+
+.swiper {
+  width: 800px;
+  height: 300px;
+}
+.slider-items {
+  background-color: rgb(240, 240, 183);
+  padding: 30px;
+  border-radius: 6px;
+}
+.slider-items p {
+  font-family: var(--font-2);
+  font-weight: var(--font-weight-1);
+  color: var(--clr-2);
+  font-size: 15px;
+  text-align: justify;
+}
+
+.slider-items .ms-1 {
+  font-weight: var(--font-weight-3);
+  color: var(--clr-2);
+  font-size: 18px;
+}
+
+.slider-items .ms-1 span {
+  font-weight: var(--font-weight-1);
+  color: var(--clr-7);
+  font-size: 15px;
+}
+
+.swiper-navBtn::after,
+.swiper-navBtn::before {
+  font-size: 30px;
+  font-weight: var(--font-weight-3);
+  color: var(--clr-1);
+  transition: 0.4s;
+}
+
+.swiper-navBtn:hover:after,
+.swiper-navBtn:hover:before {
+  transform: scale(1.2);
+  color: var(--clr-4);
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-next{
+  right: -4px;
+}
+
+.swiper-pagination {
+  bottom: 10px !important;
+}
+
+/* slider section ends here */
