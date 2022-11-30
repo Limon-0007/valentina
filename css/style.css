@@ -561,6 +561,20 @@ body {
   }
 }
 
+ @media only screen and (max-width: 580px){
+  .swiper {
+    width: 25rem !important;
+    height: 18rem !important;
+  }
+  .slider-items {
+    padding: 20px;
+  }
+
+  .swiper-navBtn {
+    display: none;
+  }
+ }
+
 @media only screen and (max-width: 480px) {
   .countdown .day,
   .countdown .hour,
@@ -581,6 +595,30 @@ body {
   .countdown .sec .word {
     display: block;
     font-size: 12px !important;
+  }
+
+  .swiper {
+    width: 22rem !important;
+    height: 14rem !important;
+  }
+  .slider-items p {
+    font-size: 10px !important;
+  }
+  .slider-items .ms-1 span {
+    font-size: 14px !important;
+  }
+  .swiper-navBtn {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 380px){
+  .swiper {
+    width: 18rem !important;
+    height: 14rem !important;
+  } 
+  .slider-items .ms-1 span {
+    font-size: 10px !important;
   }
 }
 
@@ -605,6 +643,23 @@ body {
     display: block;
     font-size: 10px !important;
   }
+  .swiper {
+    width: 18rem !important;
+    height: 15rem !important;
+  } 
+  .slider-items {
+    padding: 20px !important;
+  }
+  .slider-items .ms-1 span {
+    font-size: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 320px){
+  .swiper {
+    width: 15rem !important;
+    height: 15rem !important;
+  } 
 }
 
 /* countdown section ends here */
@@ -612,8 +667,8 @@ body {
 /* slider section starts from here */
 
 .swiper {
-  width: 800px;
-  height: 300px;
+  width: 50rem;
+  height: 18rem;
 }
 .slider-items {
   background-color: rgb(240, 240, 183);
@@ -632,6 +687,7 @@ body {
   font-weight: var(--font-weight-3);
   color: var(--clr-2);
   font-size: 18px;
+  text-align: left !important;
 }
 
 .slider-items .ms-1 span {
@@ -655,11 +711,11 @@ body {
 }
 
 .swiper-button-prev {
-  left: 0;
+  left: 7px;
 }
 
 .swiper-button-next{
-  right: -4px;
+  right: 0px;
 }
 
 .swiper-pagination {
